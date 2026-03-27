@@ -39,49 +39,9 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.txtFirstname = new System.Windows.Forms.TextBox();
 			this.cboProgram = new System.Windows.Forms.ComboBox();
-			this.midtermGradeTab = new System.Windows.Forms.TabControl();
+			this.MidtermTab = new System.Windows.Forms.TabControl();
 			this.midtermGradingTab = new System.Windows.Forms.TabPage();
-			this.finalGradingTab = new System.Windows.Forms.TabPage();
-			this.txtFCP = new System.Windows.Forms.TextBox();
-			this.txtFA = new System.Windows.Forms.TextBox();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
-			this.txtFQ1 = new System.Windows.Forms.TextBox();
-			this.cboFItemsFE = new System.Windows.Forms.ComboBox();
-			this.cboFItemsQ4 = new System.Windows.Forms.ComboBox();
-			this.cboFItemsQ3 = new System.Windows.Forms.ComboBox();
-			this.cboFItemsQ2 = new System.Windows.Forms.ComboBox();
-			this.cboFItemsQ1 = new System.Windows.Forms.ComboBox();
-			this.txtFQ2 = new System.Windows.Forms.TextBox();
-			this.txtFQ1Ave = new System.Windows.Forms.TextBox();
-			this.txtFE = new System.Windows.Forms.TextBox();
-			this.txtFQ3 = new System.Windows.Forms.TextBox();
-			this.txtFQ4 = new System.Windows.Forms.TextBox();
-			this.txtFQ2Ave = new System.Windows.Forms.TextBox();
-			this.txtFEAve = new System.Windows.Forms.TextBox();
-			this.txtFQ4Ave = new System.Windows.Forms.TextBox();
-			this.txtFQ3Ave = new System.Windows.Forms.TextBox();
-			this.label15 = new System.Windows.Forms.Label();
-			this.label16 = new System.Windows.Forms.Label();
-			this.txtFLabGrade = new System.Windows.Forms.TextBox();
-			this.txtFinalGrade = new System.Windows.Forms.TextBox();
-			this.txtSubject = new System.Windows.Forms.TextBox();
-			this.txtSurname = new System.Windows.Forms.TextBox();
-			this.txtSN = new System.Windows.Forms.TextBox();
-			this.label17 = new System.Windows.Forms.Label();
-			this.label18 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.label19 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
+			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
 			this.txtMidtermGrade = new System.Windows.Forms.TextBox();
 			this.txtMLabGrade = new System.Windows.Forms.TextBox();
 			this.label20 = new System.Windows.Forms.Label();
@@ -92,7 +52,7 @@
 			this.txtMQ2Ave = new System.Windows.Forms.TextBox();
 			this.txtMQ4 = new System.Windows.Forms.TextBox();
 			this.txtMQ3 = new System.Windows.Forms.TextBox();
-			this.txtMe = new System.Windows.Forms.TextBox();
+			this.txtME = new System.Windows.Forms.TextBox();
 			this.txtMQ1Ave = new System.Windows.Forms.TextBox();
 			this.txtMQ2 = new System.Windows.Forms.TextBox();
 			this.cboMItemsQ1 = new System.Windows.Forms.ComboBox();
@@ -110,10 +70,50 @@
 			this.label28 = new System.Windows.Forms.Label();
 			this.txtMA = new System.Windows.Forms.TextBox();
 			this.txtMCP = new System.Windows.Forms.TextBox();
-			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+			this.finalGradingTab = new System.Windows.Forms.TabPage();
 			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+			this.txtFLabGrade = new System.Windows.Forms.TextBox();
+			this.label16 = new System.Windows.Forms.Label();
+			this.label15 = new System.Windows.Forms.Label();
+			this.txtFQ3Ave = new System.Windows.Forms.TextBox();
+			this.txtFQ4Ave = new System.Windows.Forms.TextBox();
+			this.txtFEAve = new System.Windows.Forms.TextBox();
+			this.txtFQ2Ave = new System.Windows.Forms.TextBox();
+			this.txtFQ4 = new System.Windows.Forms.TextBox();
+			this.txtFQ3 = new System.Windows.Forms.TextBox();
+			this.txtFE = new System.Windows.Forms.TextBox();
+			this.txtFQ1Ave = new System.Windows.Forms.TextBox();
+			this.txtFQ2 = new System.Windows.Forms.TextBox();
+			this.cboFItemsQ1 = new System.Windows.Forms.ComboBox();
+			this.cboFItemsQ2 = new System.Windows.Forms.ComboBox();
+			this.cboFItemsQ3 = new System.Windows.Forms.ComboBox();
+			this.cboFItemsQ4 = new System.Windows.Forms.ComboBox();
+			this.cboFItemsFE = new System.Windows.Forms.ComboBox();
+			this.label14 = new System.Windows.Forms.Label();
+			this.label13 = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.txtFA = new System.Windows.Forms.TextBox();
+			this.txtFCP = new System.Windows.Forms.TextBox();
+			this.txtSubject = new System.Windows.Forms.TextBox();
+			this.txtSurname = new System.Windows.Forms.TextBox();
+			this.txtSN = new System.Windows.Forms.TextBox();
+			this.label17 = new System.Windows.Forms.Label();
+			this.label18 = new System.Windows.Forms.Label();
+			this.label19 = new System.Windows.Forms.Label();
+			this.btnSave = new System.Windows.Forms.Button();
+			this.btnClear = new System.Windows.Forms.Button();
+			this.btnRecompute = new System.Windows.Forms.Button();
+			this.btnUpload = new System.Windows.Forms.Button();
+			this.txtFinalAve = new System.Windows.Forms.TextBox();
+			this.txtSA = new System.Windows.Forms.TextBox();
+			this.txtFQ1 = new System.Windows.Forms.TextBox();
+			this.txtFinalGrade = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
-			this.midtermGradeTab.SuspendLayout();
+			this.MidtermTab.SuspendLayout();
 			this.midtermGradingTab.SuspendLayout();
 			this.finalGradingTab.SuspendLayout();
 			this.SuspendLayout();
@@ -224,15 +224,15 @@
 			this.cboProgram.Size = new System.Drawing.Size(158, 28);
 			this.cboProgram.TabIndex = 13;
 			// 
-			// midtermGradeTab
+			// MidtermTab
 			// 
-			this.midtermGradeTab.Controls.Add(this.midtermGradingTab);
-			this.midtermGradeTab.Controls.Add(this.finalGradingTab);
-			this.midtermGradeTab.Location = new System.Drawing.Point(906, 171);
-			this.midtermGradeTab.Name = "midtermGradeTab";
-			this.midtermGradeTab.SelectedIndex = 0;
-			this.midtermGradeTab.Size = new System.Drawing.Size(633, 465);
-			this.midtermGradeTab.TabIndex = 14;
+			this.MidtermTab.Controls.Add(this.midtermGradingTab);
+			this.MidtermTab.Controls.Add(this.finalGradingTab);
+			this.MidtermTab.Location = new System.Drawing.Point(906, 171);
+			this.MidtermTab.Name = "MidtermTab";
+			this.MidtermTab.SelectedIndex = 0;
+			this.MidtermTab.Size = new System.Drawing.Size(633, 465);
+			this.MidtermTab.TabIndex = 14;
 			// 
 			// midtermGradingTab
 			// 
@@ -247,7 +247,7 @@
 			this.midtermGradingTab.Controls.Add(this.txtMQ2Ave);
 			this.midtermGradingTab.Controls.Add(this.txtMQ4);
 			this.midtermGradingTab.Controls.Add(this.txtMQ3);
-			this.midtermGradingTab.Controls.Add(this.txtMe);
+			this.midtermGradingTab.Controls.Add(this.txtME);
 			this.midtermGradingTab.Controls.Add(this.txtMQ1Ave);
 			this.midtermGradingTab.Controls.Add(this.txtMQ2);
 			this.midtermGradingTab.Controls.Add(this.cboMItemsQ1);
@@ -268,410 +268,20 @@
 			this.midtermGradingTab.Location = new System.Drawing.Point(4, 25);
 			this.midtermGradingTab.Name = "midtermGradingTab";
 			this.midtermGradingTab.Padding = new System.Windows.Forms.Padding(3);
-			this.midtermGradingTab.Size = new System.Drawing.Size(625, 449);
+			this.midtermGradingTab.Size = new System.Drawing.Size(625, 436);
 			this.midtermGradingTab.TabIndex = 0;
 			this.midtermGradingTab.Text = "MIDTERM GRADING";
 			this.midtermGradingTab.UseVisualStyleBackColor = true;
 			// 
-			// finalGradingTab
-			// 
-			this.finalGradingTab.Controls.Add(this.linkLabel2);
-			this.finalGradingTab.Controls.Add(this.txtFinalGrade);
-			this.finalGradingTab.Controls.Add(this.txtFLabGrade);
-			this.finalGradingTab.Controls.Add(this.label16);
-			this.finalGradingTab.Controls.Add(this.label15);
-			this.finalGradingTab.Controls.Add(this.txtFQ3Ave);
-			this.finalGradingTab.Controls.Add(this.txtFQ4Ave);
-			this.finalGradingTab.Controls.Add(this.txtFEAve);
-			this.finalGradingTab.Controls.Add(this.txtFQ2Ave);
-			this.finalGradingTab.Controls.Add(this.txtFQ4);
-			this.finalGradingTab.Controls.Add(this.txtFQ3);
-			this.finalGradingTab.Controls.Add(this.txtFE);
-			this.finalGradingTab.Controls.Add(this.txtFQ1Ave);
-			this.finalGradingTab.Controls.Add(this.txtFQ2);
-			this.finalGradingTab.Controls.Add(this.cboFItemsQ1);
-			this.finalGradingTab.Controls.Add(this.cboFItemsQ2);
-			this.finalGradingTab.Controls.Add(this.cboFItemsQ3);
-			this.finalGradingTab.Controls.Add(this.cboFItemsQ4);
-			this.finalGradingTab.Controls.Add(this.cboFItemsFE);
-			this.finalGradingTab.Controls.Add(this.txtFQ1);
-			this.finalGradingTab.Controls.Add(this.label14);
-			this.finalGradingTab.Controls.Add(this.label13);
-			this.finalGradingTab.Controls.Add(this.label12);
-			this.finalGradingTab.Controls.Add(this.label11);
-			this.finalGradingTab.Controls.Add(this.label10);
-			this.finalGradingTab.Controls.Add(this.label9);
-			this.finalGradingTab.Controls.Add(this.label8);
-			this.finalGradingTab.Controls.Add(this.txtFA);
-			this.finalGradingTab.Controls.Add(this.txtFCP);
-			this.finalGradingTab.Location = new System.Drawing.Point(4, 25);
-			this.finalGradingTab.Name = "finalGradingTab";
-			this.finalGradingTab.Padding = new System.Windows.Forms.Padding(3);
-			this.finalGradingTab.Size = new System.Drawing.Size(625, 436);
-			this.finalGradingTab.TabIndex = 1;
-			this.finalGradingTab.Text = "FINAL GRADING";
-			this.finalGradingTab.UseVisualStyleBackColor = true;
-			// 
-			// txtFCP
-			// 
-			this.txtFCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFCP.Location = new System.Drawing.Point(179, 49);
-			this.txtFCP.Name = "txtFCP";
-			this.txtFCP.Size = new System.Drawing.Size(394, 28);
-			this.txtFCP.TabIndex = 15;
-			// 
-			// txtFA
-			// 
-			this.txtFA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFA.Location = new System.Drawing.Point(179, 93);
-			this.txtFA.Name = "txtFA";
-			this.txtFA.Size = new System.Drawing.Size(394, 28);
-			this.txtFA.TabIndex = 16;
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.Location = new System.Drawing.Point(18, 54);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(155, 20);
-			this.label8.TabIndex = 15;
-			this.label8.Text = "Class Participation:";
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.Location = new System.Drawing.Point(18, 101);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(98, 20);
-			this.label9.TabIndex = 17;
-			this.label9.Text = "Attendance:";
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(18, 150);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(63, 20);
-			this.label10.TabIndex = 18;
-			this.label10.Text = "Quiz 1:";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(18, 184);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(63, 20);
-			this.label11.TabIndex = 19;
-			this.label11.Text = "Quiz 2:";
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(18, 224);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(63, 20);
-			this.label12.TabIndex = 20;
-			this.label12.Text = "Quiz 3:";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(18, 260);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(63, 20);
-			this.label13.TabIndex = 21;
-			this.label13.Text = "Quiz 4:";
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.Location = new System.Drawing.Point(18, 297);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(97, 20);
-			this.label14.TabIndex = 22;
-			this.label14.Text = "Final Exam:";
-			// 
-			// txtFQ1
-			// 
-			this.txtFQ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ1.Location = new System.Drawing.Point(275, 142);
-			this.txtFQ1.Name = "txtFQ1";
-			this.txtFQ1.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ1.TabIndex = 23;
-			// 
-			// cboFItemsFE
-			// 
-			this.cboFItemsFE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cboFItemsFE.FormattingEnabled = true;
-			this.cboFItemsFE.Location = new System.Drawing.Point(123, 289);
-			this.cboFItemsFE.Name = "cboFItemsFE";
-			this.cboFItemsFE.Size = new System.Drawing.Size(146, 28);
-			this.cboFItemsFE.TabIndex = 15;
-			// 
-			// cboFItemsQ4
-			// 
-			this.cboFItemsQ4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cboFItemsQ4.FormattingEnabled = true;
-			this.cboFItemsQ4.Location = new System.Drawing.Point(123, 252);
-			this.cboFItemsQ4.Name = "cboFItemsQ4";
-			this.cboFItemsQ4.Size = new System.Drawing.Size(146, 28);
-			this.cboFItemsQ4.TabIndex = 24;
-			// 
-			// cboFItemsQ3
-			// 
-			this.cboFItemsQ3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cboFItemsQ3.FormattingEnabled = true;
-			this.cboFItemsQ3.Location = new System.Drawing.Point(123, 216);
-			this.cboFItemsQ3.Name = "cboFItemsQ3";
-			this.cboFItemsQ3.Size = new System.Drawing.Size(146, 28);
-			this.cboFItemsQ3.TabIndex = 25;
-			// 
-			// cboFItemsQ2
-			// 
-			this.cboFItemsQ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cboFItemsQ2.FormattingEnabled = true;
-			this.cboFItemsQ2.Location = new System.Drawing.Point(123, 176);
-			this.cboFItemsQ2.Name = "cboFItemsQ2";
-			this.cboFItemsQ2.Size = new System.Drawing.Size(146, 28);
-			this.cboFItemsQ2.TabIndex = 26;
-			// 
-			// cboFItemsQ1
-			// 
-			this.cboFItemsQ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cboFItemsQ1.FormattingEnabled = true;
-			this.cboFItemsQ1.Location = new System.Drawing.Point(123, 142);
-			this.cboFItemsQ1.Name = "cboFItemsQ1";
-			this.cboFItemsQ1.Size = new System.Drawing.Size(146, 28);
-			this.cboFItemsQ1.TabIndex = 27;
-			// 
-			// txtFQ2
-			// 
-			this.txtFQ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ2.Location = new System.Drawing.Point(275, 176);
-			this.txtFQ2.Name = "txtFQ2";
-			this.txtFQ2.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ2.TabIndex = 28;
-			// 
-			// txtFQ1Ave
-			// 
-			this.txtFQ1Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ1Ave.Location = new System.Drawing.Point(427, 142);
-			this.txtFQ1Ave.Name = "txtFQ1Ave";
-			this.txtFQ1Ave.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ1Ave.TabIndex = 29;
-			// 
-			// txtFE
-			// 
-			this.txtFE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFE.Location = new System.Drawing.Point(275, 289);
-			this.txtFE.Name = "txtFE";
-			this.txtFE.Size = new System.Drawing.Size(146, 28);
-			this.txtFE.TabIndex = 30;
-			// 
-			// txtFQ3
-			// 
-			this.txtFQ3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ3.Location = new System.Drawing.Point(275, 216);
-			this.txtFQ3.Name = "txtFQ3";
-			this.txtFQ3.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ3.TabIndex = 31;
-			// 
-			// txtFQ4
-			// 
-			this.txtFQ4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ4.Location = new System.Drawing.Point(275, 252);
-			this.txtFQ4.Name = "txtFQ4";
-			this.txtFQ4.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ4.TabIndex = 32;
-			// 
-			// txtFQ2Ave
-			// 
-			this.txtFQ2Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ2Ave.Location = new System.Drawing.Point(427, 176);
-			this.txtFQ2Ave.Name = "txtFQ2Ave";
-			this.txtFQ2Ave.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ2Ave.TabIndex = 33;
-			// 
-			// txtFEAve
-			// 
-			this.txtFEAve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFEAve.Location = new System.Drawing.Point(427, 289);
-			this.txtFEAve.Name = "txtFEAve";
-			this.txtFEAve.Size = new System.Drawing.Size(146, 28);
-			this.txtFEAve.TabIndex = 34;
-			// 
-			// txtFQ4Ave
-			// 
-			this.txtFQ4Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ4Ave.Location = new System.Drawing.Point(427, 252);
-			this.txtFQ4Ave.Name = "txtFQ4Ave";
-			this.txtFQ4Ave.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ4Ave.TabIndex = 35;
-			// 
-			// txtFQ3Ave
-			// 
-			this.txtFQ3Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ3Ave.Location = new System.Drawing.Point(427, 216);
-			this.txtFQ3Ave.Name = "txtFQ3Ave";
-			this.txtFQ3Ave.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ3Ave.TabIndex = 36;
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(18, 340);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(193, 20);
-			this.label15.TabIndex = 37;
-			this.label15.Text = "LABORATORY GRADE:\r\n";
-			// 
-			// label16
-			// 
-			this.label16.AutoSize = true;
-			this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label16.Location = new System.Drawing.Point(18, 388);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(126, 20);
-			this.label16.TabIndex = 38;
-			this.label16.Text = "FINAL GRADE:";
-			// 
-			// txtFLabGrade
-			// 
-			this.txtFLabGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFLabGrade.Location = new System.Drawing.Point(217, 332);
-			this.txtFLabGrade.Name = "txtFLabGrade";
-			this.txtFLabGrade.Size = new System.Drawing.Size(356, 28);
-			this.txtFLabGrade.TabIndex = 39;
-			// 
-			// txtFinalGrade
-			// 
-			this.txtFinalGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFinalGrade.Location = new System.Drawing.Point(217, 380);
-			this.txtFinalGrade.Name = "txtFinalGrade";
-			this.txtFinalGrade.Size = new System.Drawing.Size(356, 28);
-			this.txtFinalGrade.TabIndex = 40;
-			// 
-			// txtSubject
-			// 
-			this.txtSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSubject.Location = new System.Drawing.Point(687, 113);
-			this.txtSubject.Name = "txtSubject";
-			this.txtSubject.Size = new System.Drawing.Size(158, 28);
-			this.txtSubject.TabIndex = 15;
-			// 
-			// txtSurname
-			// 
-			this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSurname.Location = new System.Drawing.Point(158, 113);
-			this.txtSurname.Name = "txtSurname";
-			this.txtSurname.Size = new System.Drawing.Size(158, 28);
-			this.txtSurname.TabIndex = 18;
-			// 
-			// txtSN
-			// 
-			this.txtSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSN.Location = new System.Drawing.Point(158, 67);
-			this.txtSN.Name = "txtSN";
-			this.txtSN.Size = new System.Drawing.Size(158, 28);
-			this.txtSN.TabIndex = 19;
-			// 
-			// label17
-			// 
-			this.label17.AutoSize = true;
-			this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label17.Location = new System.Drawing.Point(966, 713);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(158, 20);
-			this.label17.TabIndex = 41;
-			this.label17.Text = "Special Assesment:";
-			// 
-			// label18
-			// 
-			this.label18.AutoSize = true;
-			this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label18.Location = new System.Drawing.Point(966, 663);
-			this.label18.Name = "label18";
-			this.label18.Size = new System.Drawing.Size(116, 20);
-			this.label18.TabIndex = 42;
-			this.label18.Text = "Final Average:";
-			// 
-			// textBox1
-			// 
-			this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(1130, 658);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(206, 28);
-			this.textBox1.TabIndex = 41;
-			// 
-			// textBox2
-			// 
-			this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox2.Location = new System.Drawing.Point(1130, 705);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(206, 28);
-			this.textBox2.TabIndex = 45;
-			// 
-			// label19
-			// 
-			this.label19.AutoSize = true;
-			this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label19.Location = new System.Drawing.Point(1128, 736);
-			this.label19.Name = "label19";
-			this.label19.Size = new System.Drawing.Size(208, 18);
-			this.label19.TabIndex = 46;
-			this.label19.Text = "(eg., 6.00 for UW,  4.00 = INC)";
-			// 
-			// button1
-			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(1405, 658);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(130, 41);
-			this.button1.TabIndex = 47;
-			this.button1.Text = "SAVE CHANGES";
-			this.button1.UseVisualStyleBackColor = false;
-			// 
-			// button2
-			// 
-			this.button2.BackColor = System.Drawing.Color.Blue;
-			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(1405, 794);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(130, 41);
-			this.button2.TabIndex = 48;
-			this.button2.Text = "CLEAR GRADES";
-			this.button2.UseVisualStyleBackColor = false;
-			// 
-			// button3
-			// 
-			this.button3.BackColor = System.Drawing.Color.Blue;
-			this.button3.ForeColor = System.Drawing.Color.White;
-			this.button3.Location = new System.Drawing.Point(1405, 747);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(130, 41);
-			this.button3.TabIndex = 49;
-			this.button3.Text = "RECOMPLETE";
-			this.button3.UseVisualStyleBackColor = false;
-			// 
-			// button4
-			// 
-			this.button4.BackColor = System.Drawing.Color.Yellow;
-			this.button4.ForeColor = System.Drawing.Color.Black;
-			this.button4.Location = new System.Drawing.Point(1405, 701);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(130, 41);
-			this.button4.TabIndex = 50;
-			this.button4.Text = "UPLOAD";
-			this.button4.UseVisualStyleBackColor = false;
+			// linkLabel1
+			// 
+			this.linkLabel1.AutoSize = true;
+			this.linkLabel1.Location = new System.Drawing.Point(546, 18);
+			this.linkLabel1.Name = "linkLabel1";
+			this.linkLabel1.Size = new System.Drawing.Size(54, 16);
+			this.linkLabel1.TabIndex = 69;
+			this.linkLabel1.TabStop = true;
+			this.linkLabel1.Text = "Refresh\r\n";
 			// 
 			// txtMidtermGrade
 			// 
@@ -688,6 +298,7 @@
 			this.txtMLabGrade.Name = "txtMLabGrade";
 			this.txtMLabGrade.Size = new System.Drawing.Size(383, 28);
 			this.txtMLabGrade.TabIndex = 67;
+			this.txtMLabGrade.TextChanged += new System.EventHandler(this.txtMLabGrade_TextChanged);
 			// 
 			// label20
 			// 
@@ -748,6 +359,7 @@
 			this.txtMQ4.Name = "txtMQ4";
 			this.txtMQ4.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ4.TabIndex = 60;
+			this.txtMQ4.TextChanged += new System.EventHandler(this.txtMQ4_TextChanged);
 			// 
 			// txtMQ3
 			// 
@@ -756,14 +368,16 @@
 			this.txtMQ3.Name = "txtMQ3";
 			this.txtMQ3.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ3.TabIndex = 59;
+			this.txtMQ3.TextChanged += new System.EventHandler(this.txtMQ3_TextChanged);
 			// 
-			// txtMe
+			// txtME
 			// 
-			this.txtMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtMe.Location = new System.Drawing.Point(302, 290);
-			this.txtMe.Name = "txtMe";
-			this.txtMe.Size = new System.Drawing.Size(146, 28);
-			this.txtMe.TabIndex = 58;
+			this.txtME.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtME.Location = new System.Drawing.Point(302, 290);
+			this.txtME.Name = "txtME";
+			this.txtME.Size = new System.Drawing.Size(146, 28);
+			this.txtME.TabIndex = 58;
+			this.txtME.TextChanged += new System.EventHandler(this.txtMe_TextChanged);
 			// 
 			// txtMQ1Ave
 			// 
@@ -780,11 +394,23 @@
 			this.txtMQ2.Name = "txtMQ2";
 			this.txtMQ2.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ2.TabIndex = 56;
+			this.txtMQ2.TextChanged += new System.EventHandler(this.txtMQ2_TextChanged);
 			// 
 			// cboMItemsQ1
 			// 
 			this.cboMItemsQ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cboMItemsQ1.FormattingEnabled = true;
+			this.cboMItemsQ1.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
 			this.cboMItemsQ1.Location = new System.Drawing.Point(150, 143);
 			this.cboMItemsQ1.Name = "cboMItemsQ1";
 			this.cboMItemsQ1.Size = new System.Drawing.Size(146, 28);
@@ -794,6 +420,17 @@
 			// 
 			this.cboMItemsQ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cboMItemsQ2.FormattingEnabled = true;
+			this.cboMItemsQ2.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
 			this.cboMItemsQ2.Location = new System.Drawing.Point(150, 177);
 			this.cboMItemsQ2.Name = "cboMItemsQ2";
 			this.cboMItemsQ2.Size = new System.Drawing.Size(146, 28);
@@ -803,6 +440,17 @@
 			// 
 			this.cboMItemsQ3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cboMItemsQ3.FormattingEnabled = true;
+			this.cboMItemsQ3.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
 			this.cboMItemsQ3.Location = new System.Drawing.Point(150, 217);
 			this.cboMItemsQ3.Name = "cboMItemsQ3";
 			this.cboMItemsQ3.Size = new System.Drawing.Size(146, 28);
@@ -812,6 +460,17 @@
 			// 
 			this.cboMItemsQ4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cboMItemsQ4.FormattingEnabled = true;
+			this.cboMItemsQ4.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
 			this.cboMItemsQ4.Location = new System.Drawing.Point(150, 253);
 			this.cboMItemsQ4.Name = "cboMItemsQ4";
 			this.cboMItemsQ4.Size = new System.Drawing.Size(146, 28);
@@ -821,6 +480,17 @@
 			// 
 			this.cboMItemsME.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cboMItemsME.FormattingEnabled = true;
+			this.cboMItemsME.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
 			this.cboMItemsME.Location = new System.Drawing.Point(150, 290);
 			this.cboMItemsME.Name = "cboMItemsME";
 			this.cboMItemsME.Size = new System.Drawing.Size(146, 28);
@@ -833,6 +503,7 @@
 			this.txtMQ1.Name = "txtMQ1";
 			this.txtMQ1.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ1.TabIndex = 51;
+			this.txtMQ1.TextChanged += new System.EventHandler(this.txtMQ1_TextChanged);
 			// 
 			// label22
 			// 
@@ -907,28 +578,60 @@
 			// txtMA
 			// 
 			this.txtMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtMA.Location = new System.Drawing.Point(179, 94);
+			this.txtMA.Location = new System.Drawing.Point(194, 94);
 			this.txtMA.Name = "txtMA";
-			this.txtMA.Size = new System.Drawing.Size(421, 28);
+			this.txtMA.Size = new System.Drawing.Size(406, 28);
 			this.txtMA.TabIndex = 44;
+			this.txtMA.TextChanged += new System.EventHandler(this.txtMA_TextChanged);
 			// 
 			// txtMCP
 			// 
 			this.txtMCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtMCP.Location = new System.Drawing.Point(179, 50);
+			this.txtMCP.Location = new System.Drawing.Point(194, 47);
 			this.txtMCP.Name = "txtMCP";
-			this.txtMCP.Size = new System.Drawing.Size(421, 28);
+			this.txtMCP.Size = new System.Drawing.Size(406, 28);
 			this.txtMCP.TabIndex = 41;
+			this.txtMCP.TextChanged += new System.EventHandler(this.txtMCP_TextChanged);
 			// 
-			// linkLabel1
+			// finalGradingTab
 			// 
-			this.linkLabel1.AutoSize = true;
-			this.linkLabel1.Location = new System.Drawing.Point(546, 18);
-			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.Size = new System.Drawing.Size(54, 16);
-			this.linkLabel1.TabIndex = 69;
-			this.linkLabel1.TabStop = true;
-			this.linkLabel1.Text = "Refresh\r\n";
+			this.finalGradingTab.Controls.Add(this.txtFinalGrade);
+			this.finalGradingTab.Controls.Add(this.txtFQ1);
+			this.finalGradingTab.Controls.Add(this.linkLabel2);
+			this.finalGradingTab.Controls.Add(this.txtFLabGrade);
+			this.finalGradingTab.Controls.Add(this.label16);
+			this.finalGradingTab.Controls.Add(this.label15);
+			this.finalGradingTab.Controls.Add(this.txtFQ3Ave);
+			this.finalGradingTab.Controls.Add(this.txtFQ4Ave);
+			this.finalGradingTab.Controls.Add(this.txtFEAve);
+			this.finalGradingTab.Controls.Add(this.txtFQ2Ave);
+			this.finalGradingTab.Controls.Add(this.txtFQ4);
+			this.finalGradingTab.Controls.Add(this.txtFQ3);
+			this.finalGradingTab.Controls.Add(this.txtFE);
+			this.finalGradingTab.Controls.Add(this.txtFQ1Ave);
+			this.finalGradingTab.Controls.Add(this.txtFQ2);
+			this.finalGradingTab.Controls.Add(this.cboFItemsQ1);
+			this.finalGradingTab.Controls.Add(this.cboFItemsQ2);
+			this.finalGradingTab.Controls.Add(this.cboFItemsQ3);
+			this.finalGradingTab.Controls.Add(this.cboFItemsQ4);
+			this.finalGradingTab.Controls.Add(this.cboFItemsFE);
+			this.finalGradingTab.Controls.Add(this.label14);
+			this.finalGradingTab.Controls.Add(this.label13);
+			this.finalGradingTab.Controls.Add(this.label12);
+			this.finalGradingTab.Controls.Add(this.label11);
+			this.finalGradingTab.Controls.Add(this.label10);
+			this.finalGradingTab.Controls.Add(this.label9);
+			this.finalGradingTab.Controls.Add(this.label8);
+			this.finalGradingTab.Controls.Add(this.txtFA);
+			this.finalGradingTab.Controls.Add(this.txtFCP);
+			this.finalGradingTab.Location = new System.Drawing.Point(4, 25);
+			this.finalGradingTab.Name = "finalGradingTab";
+			this.finalGradingTab.Padding = new System.Windows.Forms.Padding(3);
+			this.finalGradingTab.Size = new System.Drawing.Size(625, 436);
+			this.finalGradingTab.TabIndex = 1;
+			this.finalGradingTab.Text = "FINAL GRADING";
+			this.finalGradingTab.UseVisualStyleBackColor = true;
+			this.finalGradingTab.Click += new System.EventHandler(this.finalGradingTab_Click);
 			// 
 			// linkLabel2
 			// 
@@ -940,24 +643,451 @@
 			this.linkLabel2.TabStop = true;
 			this.linkLabel2.Text = "Refresh\r\n";
 			// 
+			// txtFLabGrade
+			// 
+			this.txtFLabGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFLabGrade.Location = new System.Drawing.Point(230, 332);
+			this.txtFLabGrade.Name = "txtFLabGrade";
+			this.txtFLabGrade.Size = new System.Drawing.Size(356, 28);
+			this.txtFLabGrade.TabIndex = 39;
+			this.txtFLabGrade.TextChanged += new System.EventHandler(this.txtFLabGrade_TextChanged);
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label16.Location = new System.Drawing.Point(18, 388);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(126, 20);
+			this.label16.TabIndex = 38;
+			this.label16.Text = "FINAL GRADE:";
+			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Location = new System.Drawing.Point(18, 340);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(193, 20);
+			this.label15.TabIndex = 37;
+			this.label15.Text = "LABORATORY GRADE:\r\n";
+			// 
+			// txtFQ3Ave
+			// 
+			this.txtFQ3Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ3Ave.Location = new System.Drawing.Point(441, 216);
+			this.txtFQ3Ave.Name = "txtFQ3Ave";
+			this.txtFQ3Ave.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ3Ave.TabIndex = 36;
+			// 
+			// txtFQ4Ave
+			// 
+			this.txtFQ4Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ4Ave.Location = new System.Drawing.Point(441, 252);
+			this.txtFQ4Ave.Name = "txtFQ4Ave";
+			this.txtFQ4Ave.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ4Ave.TabIndex = 35;
+			// 
+			// txtFEAve
+			// 
+			this.txtFEAve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFEAve.Location = new System.Drawing.Point(441, 289);
+			this.txtFEAve.Name = "txtFEAve";
+			this.txtFEAve.Size = new System.Drawing.Size(146, 28);
+			this.txtFEAve.TabIndex = 34;
+			// 
+			// txtFQ2Ave
+			// 
+			this.txtFQ2Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ2Ave.Location = new System.Drawing.Point(441, 176);
+			this.txtFQ2Ave.Name = "txtFQ2Ave";
+			this.txtFQ2Ave.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ2Ave.TabIndex = 33;
+			// 
+			// txtFQ4
+			// 
+			this.txtFQ4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ4.Location = new System.Drawing.Point(289, 252);
+			this.txtFQ4.Name = "txtFQ4";
+			this.txtFQ4.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ4.TabIndex = 32;
+			this.txtFQ4.TextChanged += new System.EventHandler(this.txtFQ4_TextChanged);
+			// 
+			// txtFQ3
+			// 
+			this.txtFQ3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ3.Location = new System.Drawing.Point(289, 216);
+			this.txtFQ3.Name = "txtFQ3";
+			this.txtFQ3.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ3.TabIndex = 31;
+			this.txtFQ3.TextChanged += new System.EventHandler(this.txtFQ3_TextChanged);
+			// 
+			// txtFE
+			// 
+			this.txtFE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFE.Location = new System.Drawing.Point(289, 289);
+			this.txtFE.Name = "txtFE";
+			this.txtFE.Size = new System.Drawing.Size(146, 28);
+			this.txtFE.TabIndex = 30;
+			this.txtFE.TextChanged += new System.EventHandler(this.txtFE_TextChanged);
+			// 
+			// txtFQ1Ave
+			// 
+			this.txtFQ1Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ1Ave.Location = new System.Drawing.Point(441, 142);
+			this.txtFQ1Ave.Name = "txtFQ1Ave";
+			this.txtFQ1Ave.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ1Ave.TabIndex = 29;
+			// 
+			// txtFQ2
+			// 
+			this.txtFQ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ2.Location = new System.Drawing.Point(289, 176);
+			this.txtFQ2.Name = "txtFQ2";
+			this.txtFQ2.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ2.TabIndex = 28;
+			this.txtFQ2.TextChanged += new System.EventHandler(this.txtFQ2_TextChanged);
+			// 
+			// cboFItemsQ1
+			// 
+			this.cboFItemsQ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cboFItemsQ1.FormattingEnabled = true;
+			this.cboFItemsQ1.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
+			this.cboFItemsQ1.Location = new System.Drawing.Point(137, 142);
+			this.cboFItemsQ1.Name = "cboFItemsQ1";
+			this.cboFItemsQ1.Size = new System.Drawing.Size(146, 28);
+			this.cboFItemsQ1.TabIndex = 27;
+			// 
+			// cboFItemsQ2
+			// 
+			this.cboFItemsQ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cboFItemsQ2.FormattingEnabled = true;
+			this.cboFItemsQ2.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
+			this.cboFItemsQ2.Location = new System.Drawing.Point(137, 176);
+			this.cboFItemsQ2.Name = "cboFItemsQ2";
+			this.cboFItemsQ2.Size = new System.Drawing.Size(146, 28);
+			this.cboFItemsQ2.TabIndex = 26;
+			// 
+			// cboFItemsQ3
+			// 
+			this.cboFItemsQ3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cboFItemsQ3.FormattingEnabled = true;
+			this.cboFItemsQ3.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
+			this.cboFItemsQ3.Location = new System.Drawing.Point(137, 216);
+			this.cboFItemsQ3.Name = "cboFItemsQ3";
+			this.cboFItemsQ3.Size = new System.Drawing.Size(146, 28);
+			this.cboFItemsQ3.TabIndex = 25;
+			// 
+			// cboFItemsQ4
+			// 
+			this.cboFItemsQ4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cboFItemsQ4.FormattingEnabled = true;
+			this.cboFItemsQ4.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
+			this.cboFItemsQ4.Location = new System.Drawing.Point(137, 252);
+			this.cboFItemsQ4.Name = "cboFItemsQ4";
+			this.cboFItemsQ4.Size = new System.Drawing.Size(146, 28);
+			this.cboFItemsQ4.TabIndex = 24;
+			// 
+			// cboFItemsFE
+			// 
+			this.cboFItemsFE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cboFItemsFE.FormattingEnabled = true;
+			this.cboFItemsFE.Items.AddRange(new object[] {
+            "-set number of items",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"});
+			this.cboFItemsFE.Location = new System.Drawing.Point(137, 289);
+			this.cboFItemsFE.Name = "cboFItemsFE";
+			this.cboFItemsFE.Size = new System.Drawing.Size(146, 28);
+			this.cboFItemsFE.TabIndex = 15;
+			// 
+			// label14
+			// 
+			this.label14.AutoSize = true;
+			this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label14.Location = new System.Drawing.Point(18, 297);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(97, 20);
+			this.label14.TabIndex = 22;
+			this.label14.Text = "Final Exam:";
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.Location = new System.Drawing.Point(18, 260);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(63, 20);
+			this.label13.TabIndex = 21;
+			this.label13.Text = "Quiz 4:";
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.Location = new System.Drawing.Point(18, 224);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(63, 20);
+			this.label12.TabIndex = 20;
+			this.label12.Text = "Quiz 3:";
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.Location = new System.Drawing.Point(18, 184);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(63, 20);
+			this.label11.TabIndex = 19;
+			this.label11.Text = "Quiz 2:";
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.Location = new System.Drawing.Point(18, 150);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(63, 20);
+			this.label10.TabIndex = 18;
+			this.label10.Text = "Quiz 1:";
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label9.Location = new System.Drawing.Point(18, 101);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(98, 20);
+			this.label9.TabIndex = 17;
+			this.label9.Text = "Attendance:";
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.Location = new System.Drawing.Point(18, 54);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(155, 20);
+			this.label8.TabIndex = 15;
+			this.label8.Text = "Class Participation:";
+			// 
+			// txtFA
+			// 
+			this.txtFA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFA.Location = new System.Drawing.Point(192, 93);
+			this.txtFA.Name = "txtFA";
+			this.txtFA.Size = new System.Drawing.Size(394, 28);
+			this.txtFA.TabIndex = 16;
+			this.txtFA.TextChanged += new System.EventHandler(this.txtFA_TextChanged);
+			// 
+			// txtFCP
+			// 
+			this.txtFCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFCP.Location = new System.Drawing.Point(192, 49);
+			this.txtFCP.Name = "txtFCP";
+			this.txtFCP.Size = new System.Drawing.Size(394, 28);
+			this.txtFCP.TabIndex = 15;
+			this.txtFCP.TextChanged += new System.EventHandler(this.txtFCP_TextChanged);
+			// 
+			// txtSubject
+			// 
+			this.txtSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtSubject.Location = new System.Drawing.Point(687, 113);
+			this.txtSubject.Name = "txtSubject";
+			this.txtSubject.Size = new System.Drawing.Size(158, 28);
+			this.txtSubject.TabIndex = 15;
+			// 
+			// txtSurname
+			// 
+			this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtSurname.Location = new System.Drawing.Point(158, 113);
+			this.txtSurname.Name = "txtSurname";
+			this.txtSurname.Size = new System.Drawing.Size(158, 28);
+			this.txtSurname.TabIndex = 18;
+			// 
+			// txtSN
+			// 
+			this.txtSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtSN.Location = new System.Drawing.Point(158, 67);
+			this.txtSN.Name = "txtSN";
+			this.txtSN.Size = new System.Drawing.Size(158, 28);
+			this.txtSN.TabIndex = 19;
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.Location = new System.Drawing.Point(966, 713);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(158, 20);
+			this.label17.TabIndex = 41;
+			this.label17.Text = "Special Assesment:";
+			// 
+			// label18
+			// 
+			this.label18.AutoSize = true;
+			this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label18.Location = new System.Drawing.Point(966, 663);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(116, 20);
+			this.label18.TabIndex = 42;
+			this.label18.Text = "Final Average:";
+			// 
+			// label19
+			// 
+			this.label19.AutoSize = true;
+			this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label19.Location = new System.Drawing.Point(1128, 736);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(208, 18);
+			this.label19.TabIndex = 46;
+			this.label19.Text = "(eg., 6.00 for UW,  4.00 = INC)";
+			// 
+			// btnSave
+			// 
+			this.btnSave.BackColor = System.Drawing.Color.Blue;
+			this.btnSave.ForeColor = System.Drawing.Color.White;
+			this.btnSave.Location = new System.Drawing.Point(1405, 658);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Size = new System.Drawing.Size(130, 41);
+			this.btnSave.TabIndex = 47;
+			this.btnSave.Text = "SAVE CHANGES";
+			this.btnSave.UseVisualStyleBackColor = false;
+			// 
+			// btnClear
+			// 
+			this.btnClear.BackColor = System.Drawing.Color.Blue;
+			this.btnClear.ForeColor = System.Drawing.Color.White;
+			this.btnClear.Location = new System.Drawing.Point(1405, 794);
+			this.btnClear.Name = "btnClear";
+			this.btnClear.Size = new System.Drawing.Size(130, 41);
+			this.btnClear.TabIndex = 48;
+			this.btnClear.Text = "CLEAR GRADES";
+			this.btnClear.UseVisualStyleBackColor = false;
+			// 
+			// btnRecompute
+			// 
+			this.btnRecompute.BackColor = System.Drawing.Color.Blue;
+			this.btnRecompute.ForeColor = System.Drawing.Color.White;
+			this.btnRecompute.Location = new System.Drawing.Point(1405, 747);
+			this.btnRecompute.Name = "btnRecompute";
+			this.btnRecompute.Size = new System.Drawing.Size(130, 41);
+			this.btnRecompute.TabIndex = 49;
+			this.btnRecompute.Text = "RECOMPLETE";
+			this.btnRecompute.UseVisualStyleBackColor = false;
+			// 
+			// btnUpload
+			// 
+			this.btnUpload.BackColor = System.Drawing.Color.Yellow;
+			this.btnUpload.ForeColor = System.Drawing.Color.Black;
+			this.btnUpload.Location = new System.Drawing.Point(1405, 701);
+			this.btnUpload.Name = "btnUpload";
+			this.btnUpload.Size = new System.Drawing.Size(130, 41);
+			this.btnUpload.TabIndex = 50;
+			this.btnUpload.Text = "UPLOAD";
+			this.btnUpload.UseVisualStyleBackColor = false;
+			// 
+			// txtFinalAve
+			// 
+			this.txtFinalAve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFinalAve.Location = new System.Drawing.Point(1130, 655);
+			this.txtFinalAve.Name = "txtFinalAve";
+			this.txtFinalAve.Size = new System.Drawing.Size(206, 28);
+			this.txtFinalAve.TabIndex = 51;
+			this.txtFinalAve.TextChanged += new System.EventHandler(this.txtFinalAve_TextChanged);
+			// 
+			// txtSA
+			// 
+			this.txtSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtSA.Location = new System.Drawing.Point(1130, 705);
+			this.txtSA.Name = "txtSA";
+			this.txtSA.Size = new System.Drawing.Size(206, 28);
+			this.txtSA.TabIndex = 52;
+			this.txtSA.Text = "encode here";
+			this.txtSA.Enter += new System.EventHandler(this.txtSA_Enter);
+			// 
+			// txtFQ1
+			// 
+			this.txtFQ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ1.Location = new System.Drawing.Point(289, 140);
+			this.txtFQ1.Name = "txtFQ1";
+			this.txtFQ1.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ1.TabIndex = 71;
+			this.txtFQ1.TextChanged += new System.EventHandler(this.txtFQ1_TextChanged);
+			// 
+			// txtFinalGrade
+			// 
+			this.txtFinalGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFinalGrade.Location = new System.Drawing.Point(230, 380);
+			this.txtFinalGrade.Name = "txtFinalGrade";
+			this.txtFinalGrade.Size = new System.Drawing.Size(356, 28);
+			this.txtFinalGrade.TabIndex = 72;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1565, 861);
-			this.Controls.Add(this.button4);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
+			this.ClientSize = new System.Drawing.Size(1549, 860);
+			this.Controls.Add(this.txtSA);
+			this.Controls.Add(this.txtFinalAve);
+			this.Controls.Add(this.btnUpload);
+			this.Controls.Add(this.btnRecompute);
+			this.Controls.Add(this.btnClear);
+			this.Controls.Add(this.btnSave);
 			this.Controls.Add(this.label19);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label18);
 			this.Controls.Add(this.label17);
 			this.Controls.Add(this.txtSN);
 			this.Controls.Add(this.txtSurname);
 			this.Controls.Add(this.txtSubject);
-			this.Controls.Add(this.midtermGradeTab);
+			this.Controls.Add(this.MidtermTab);
 			this.Controls.Add(this.cboProgram);
 			this.Controls.Add(this.txtFirstname);
 			this.Controls.Add(this.label7);
@@ -971,8 +1101,9 @@
 			this.Controls.Add(this.dgvStudents);
 			this.Name = "Form1";
 			this.Text = "Form1";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
-			this.midtermGradeTab.ResumeLayout(false);
+			this.MidtermTab.ResumeLayout(false);
 			this.midtermGradingTab.ResumeLayout(false);
 			this.midtermGradingTab.PerformLayout();
 			this.finalGradingTab.ResumeLayout(false);
@@ -995,7 +1126,7 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.TextBox txtFirstname;
 		private System.Windows.Forms.ComboBox cboProgram;
-		private System.Windows.Forms.TabControl midtermGradeTab;
+		private System.Windows.Forms.TabControl MidtermTab;
 		private System.Windows.Forms.TabPage midtermGradingTab;
 		private System.Windows.Forms.TabPage finalGradingTab;
 		private System.Windows.Forms.Label label13;
@@ -1016,9 +1147,7 @@
 		private System.Windows.Forms.ComboBox cboFItemsQ3;
 		private System.Windows.Forms.ComboBox cboFItemsQ4;
 		private System.Windows.Forms.ComboBox cboFItemsFE;
-		private System.Windows.Forms.TextBox txtFQ1;
 		private System.Windows.Forms.Label label14;
-		private System.Windows.Forms.TextBox txtFinalGrade;
 		private System.Windows.Forms.TextBox txtFLabGrade;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Label label15;
@@ -1031,8 +1160,6 @@
 		private System.Windows.Forms.TextBox txtSN;
 		private System.Windows.Forms.Label label17;
 		private System.Windows.Forms.Label label18;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.Label label19;
 		private System.Windows.Forms.TextBox txtMidtermGrade;
 		private System.Windows.Forms.TextBox txtMLabGrade;
@@ -1044,7 +1171,7 @@
 		private System.Windows.Forms.TextBox txtMQ2Ave;
 		private System.Windows.Forms.TextBox txtMQ4;
 		private System.Windows.Forms.TextBox txtMQ3;
-		private System.Windows.Forms.TextBox txtMe;
+		private System.Windows.Forms.TextBox txtME;
 		private System.Windows.Forms.TextBox txtMQ1Ave;
 		private System.Windows.Forms.TextBox txtMQ2;
 		private System.Windows.Forms.ComboBox cboMItemsQ1;
@@ -1062,12 +1189,16 @@
 		private System.Windows.Forms.Label label28;
 		private System.Windows.Forms.TextBox txtMA;
 		private System.Windows.Forms.TextBox txtMCP;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button4;
+		private System.Windows.Forms.Button btnSave;
+		private System.Windows.Forms.Button btnClear;
+		private System.Windows.Forms.Button btnRecompute;
+		private System.Windows.Forms.Button btnUpload;
 		private System.Windows.Forms.LinkLabel linkLabel1;
 		private System.Windows.Forms.LinkLabel linkLabel2;
+		private System.Windows.Forms.TextBox txtFinalAve;
+		private System.Windows.Forms.TextBox txtSA;
+		private System.Windows.Forms.TextBox txtFQ1;
+		private System.Windows.Forms.TextBox txtFinalGrade;
 	}
 }
 
