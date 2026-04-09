@@ -71,6 +71,8 @@
 			this.txtMA = new System.Windows.Forms.TextBox();
 			this.txtMCP = new System.Windows.Forms.TextBox();
 			this.finalGradingTab = new System.Windows.Forms.TabPage();
+			this.txtFinalGrade = new System.Windows.Forms.TextBox();
+			this.txtFQ1 = new System.Windows.Forms.TextBox();
 			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
 			this.txtFLabGrade = new System.Windows.Forms.TextBox();
 			this.label16 = new System.Windows.Forms.Label();
@@ -110,8 +112,6 @@
 			this.btnUpload = new System.Windows.Forms.Button();
 			this.txtFinalAve = new System.Windows.Forms.TextBox();
 			this.txtSA = new System.Windows.Forms.TextBox();
-			this.txtFQ1 = new System.Windows.Forms.TextBox();
-			this.txtFinalGrade = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
 			this.MidtermTab.SuspendLayout();
 			this.midtermGradingTab.SuspendLayout();
@@ -285,6 +285,7 @@
 			// 
 			// txtMidtermGrade
 			// 
+			this.txtMidtermGrade.Enabled = false;
 			this.txtMidtermGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMidtermGrade.Location = new System.Drawing.Point(217, 381);
 			this.txtMidtermGrade.Name = "txtMidtermGrade";
@@ -325,6 +326,7 @@
 			this.txtMQ3Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMQ3Ave.Location = new System.Drawing.Point(454, 217);
 			this.txtMQ3Ave.Name = "txtMQ3Ave";
+			this.txtMQ3Ave.ReadOnly = true;
 			this.txtMQ3Ave.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ3Ave.TabIndex = 64;
 			// 
@@ -333,6 +335,7 @@
 			this.txtMQ4Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMQ4Ave.Location = new System.Drawing.Point(454, 253);
 			this.txtMQ4Ave.Name = "txtMQ4Ave";
+			this.txtMQ4Ave.ReadOnly = true;
 			this.txtMQ4Ave.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ4Ave.TabIndex = 63;
 			// 
@@ -341,6 +344,7 @@
 			this.txtMEAve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMEAve.Location = new System.Drawing.Point(454, 290);
 			this.txtMEAve.Name = "txtMEAve";
+			this.txtMEAve.ReadOnly = true;
 			this.txtMEAve.Size = new System.Drawing.Size(146, 28);
 			this.txtMEAve.TabIndex = 62;
 			// 
@@ -349,6 +353,7 @@
 			this.txtMQ2Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMQ2Ave.Location = new System.Drawing.Point(454, 177);
 			this.txtMQ2Ave.Name = "txtMQ2Ave";
+			this.txtMQ2Ave.ReadOnly = true;
 			this.txtMQ2Ave.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ2Ave.TabIndex = 61;
 			// 
@@ -384,6 +389,7 @@
 			this.txtMQ1Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMQ1Ave.Location = new System.Drawing.Point(454, 143);
 			this.txtMQ1Ave.Name = "txtMQ1Ave";
+			this.txtMQ1Ave.ReadOnly = true;
 			this.txtMQ1Ave.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ1Ave.TabIndex = 57;
 			// 
@@ -632,6 +638,24 @@
 			this.finalGradingTab.Text = "FINAL GRADING";
 			this.finalGradingTab.UseVisualStyleBackColor = true;
 			this.finalGradingTab.Click += new System.EventHandler(this.finalGradingTab_Click);
+			// 
+			// txtFinalGrade
+			// 
+			this.txtFinalGrade.Enabled = false;
+			this.txtFinalGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFinalGrade.Location = new System.Drawing.Point(230, 380);
+			this.txtFinalGrade.Name = "txtFinalGrade";
+			this.txtFinalGrade.Size = new System.Drawing.Size(356, 28);
+			this.txtFinalGrade.TabIndex = 72;
+			// 
+			// txtFQ1
+			// 
+			this.txtFQ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ1.Location = new System.Drawing.Point(289, 140);
+			this.txtFQ1.Name = "txtFQ1";
+			this.txtFQ1.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ1.TabIndex = 71;
+			this.txtFQ1.TextChanged += new System.EventHandler(this.txtFQ1_TextChanged);
 			// 
 			// linkLabel2
 			// 
@@ -1036,6 +1060,7 @@
 			// 
 			// txtFinalAve
 			// 
+			this.txtFinalAve.Enabled = false;
 			this.txtFinalAve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtFinalAve.Location = new System.Drawing.Point(1130, 655);
 			this.txtFinalAve.Name = "txtFinalAve";
@@ -1051,24 +1076,9 @@
 			this.txtSA.Size = new System.Drawing.Size(206, 28);
 			this.txtSA.TabIndex = 52;
 			this.txtSA.Text = "encode here";
+			this.txtSA.TextChanged += new System.EventHandler(this.txtSA_TextChanged);
 			this.txtSA.Enter += new System.EventHandler(this.txtSA_Enter);
-			// 
-			// txtFQ1
-			// 
-			this.txtFQ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ1.Location = new System.Drawing.Point(289, 140);
-			this.txtFQ1.Name = "txtFQ1";
-			this.txtFQ1.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ1.TabIndex = 71;
-			this.txtFQ1.TextChanged += new System.EventHandler(this.txtFQ1_TextChanged);
-			// 
-			// txtFinalGrade
-			// 
-			this.txtFinalGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFinalGrade.Location = new System.Drawing.Point(230, 380);
-			this.txtFinalGrade.Name = "txtFinalGrade";
-			this.txtFinalGrade.Size = new System.Drawing.Size(356, 28);
-			this.txtFinalGrade.TabIndex = 72;
+			this.txtSA.Leave += new System.EventHandler(this.txtSA_Leave);
 			// 
 			// Form1
 			// 

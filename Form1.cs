@@ -50,11 +50,13 @@ namespace StudentGrading
 			computeGrade();
 		}
 
+
 		private void txtFA_TextChanged(object sender, EventArgs e)
 		{
 			computeGrade();
 		}
 
+		
 		private void txtFCP_TextChanged(object sender, EventArgs e)
 		{
 			computeGrade();
@@ -95,12 +97,59 @@ namespace StudentGrading
 			txtFinalGrade.Text = FinalGrade.ToString("F2");
 
 			FinalAverage = (MidtermGrade + FinalGrade) / 2;
-			txtFinalAve.Text = FinalAverage.ToString("F2");
+
+			(double equivalent, string remarks) = GetEquivalentandRemarks(FinalAverage);
+
+			txtFinalAve.Text = FinalAverage.ToString("F2") + " / " +  equivalent.ToString("F2");
 		}
 
+		private (double, string) GetEquivalentandRemarks(double average)
+		{
+			if (FinalAverage == 4.00)
+				return (4.00, "incomplete");
+			else if (FinalAverage == 6.00)
+				return (6.00, "UW");
 
+			if (FinalAverage >= 97.00 && FinalAverage <= 100.00)
+				return (1.00, "Passed");
+			else if (FinalAverage >= 94.00 && FinalAverage < 97.00)
+				return (1.25, "Passed");
+			else if (FinalAverage >= 91.00 && FinalAverage < 94.00)
+				return (1.50, "Passed");
+			else if (FinalAverage >= 88.00 && FinalAverage < 91.00)
+				return (1.75, "Passed");
+			else if (FinalAverage >= 85.00 && FinalAverage < 88.00)
+				return (2.00, "Passed");
+			else if (FinalAverage >= 82.00 && FinalAverage < 85.00)
+				return (2.25, "Passed");
+			else if (FinalAverage >= 79.00 && FinalAverage < 82.00)
+				return (2.50, "Passed");
+			else if (FinalAverage >= 76.00 && FinalAverage < 79.00)
+				return (2.75, "Passed");
+			else if (FinalAverage >= 74.00 && FinalAverage < 76.00)
+				return (3.00, "Passed");
+			else if (FinalAverage < 74.00)
+				return (5.00, "Failed");
 
+			return (0, "Invalid Grade");
+		}
 
+		private void txtSA_TextChanged(object sender, EventArgs e)
+		{
+			if (txtSA.Text == "4")
+			{
+				FinalAverage = 4.00;
+				(double equivalent, string remarks) = GetEquivalentandRemarks(FinalAverage);
+				txtFinalAve.Text = FinalAverage.ToString("F2") + " / " + equivalent.ToString("F2");
+			}
+
+			else if (txtSA.Text == "6")
+			{
+				FinalAverage = 6.00;
+				(double equivalent, string remarks) = GetEquivalentandRemarks(FinalAverage);
+				txtFinalAve.Text = FinalAverage.ToString("F2") + " / " + equivalent.ToString("F2");
+			}
+		}
 
 
 		private void txtFQ2_TextChanged(object sender, EventArgs e)
@@ -219,6 +268,11 @@ namespace StudentGrading
 		private void txtSA_Enter(object sender, EventArgs e)
 		{
 			txtSA.Clear();
+		}
+
+		private void txtSA_Leave(object sender, EventArgs e)
+		{
+			txtSA.Text = "encode here";
 		}
 
 
