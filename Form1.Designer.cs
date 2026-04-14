@@ -162,7 +162,7 @@
 			// 
 			this.cboYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cboYear.FormattingEnabled = true;
-			this.cboYear.Location = new System.Drawing.Point(427, 65);
+			this.cboYear.Location = new System.Drawing.Point(439, 67);
 			this.cboYear.Name = "cboYear";
 			this.cboYear.Size = new System.Drawing.Size(158, 28);
 			this.cboYear.TabIndex = 4;
@@ -210,7 +210,7 @@
 			// txtFirstname
 			// 
 			this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFirstname.Location = new System.Drawing.Point(427, 113);
+			this.txtFirstname.Location = new System.Drawing.Point(439, 113);
 			this.txtFirstname.Name = "txtFirstname";
 			this.txtFirstname.Size = new System.Drawing.Size(158, 28);
 			this.txtFirstname.TabIndex = 12;
@@ -219,6 +219,10 @@
 			// 
 			this.cboProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cboProgram.FormattingEnabled = true;
+			this.cboProgram.Items.AddRange(new object[] {
+            "BSIT",
+            "BSCS",
+            "ACT"});
 			this.cboProgram.Location = new System.Drawing.Point(687, 65);
 			this.cboProgram.Name = "cboProgram";
 			this.cboProgram.Size = new System.Drawing.Size(158, 28);
@@ -971,7 +975,7 @@
 			// txtSurname
 			// 
 			this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSurname.Location = new System.Drawing.Point(158, 113);
+			this.txtSurname.Location = new System.Drawing.Point(167, 113);
 			this.txtSurname.Name = "txtSurname";
 			this.txtSurname.Size = new System.Drawing.Size(158, 28);
 			this.txtSurname.TabIndex = 18;
@@ -979,7 +983,7 @@
 			// txtSN
 			// 
 			this.txtSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSN.Location = new System.Drawing.Point(158, 67);
+			this.txtSN.Location = new System.Drawing.Point(167, 67);
 			this.txtSN.Name = "txtSN";
 			this.txtSN.Size = new System.Drawing.Size(158, 28);
 			this.txtSN.TabIndex = 19;
@@ -1084,7 +1088,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1549, 860);
+			this.ClientSize = new System.Drawing.Size(1556, 856);
 			this.Controls.Add(this.txtSA);
 			this.Controls.Add(this.txtFinalAve);
 			this.Controls.Add(this.btnUpload);
@@ -1112,6 +1116,7 @@
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.Load += new System.EventHandler(this.Form1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
 			this.MidtermTab.ResumeLayout(false);
 			this.midtermGradingTab.ResumeLayout(false);

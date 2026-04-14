@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace StudentGrading
 {
 	public partial class Form1 : Form
 	{
+		MySqlConnection con = new MySqlConnection("datasource=localhost; username=root;password=;database=dbplmun");
+		MySqlCommand cmd =new MySqlCommand();
+		MySqlDataReader dtr; 
+
 		double MQ1Ave, MQ2Ave, MQ3Ave, MQ4Ave, MEAve;
 		double FQ1Ave, FQ2Ave, FQ3Ave, FQ4Ave, FEAve;
 
@@ -103,6 +108,11 @@ namespace StudentGrading
 			txtFinalAve.Text = FinalAverage.ToString("F2") + " / " +  equivalent.ToString("F2");
 		}
 
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			loadrecords();
+		}
+
 		private (double, string) GetEquivalentandRemarks(double average)
 		{
 			if (FinalAverage == 4.00)
@@ -148,6 +158,30 @@ namespace StudentGrading
 				FinalAverage = 6.00;
 				(double equivalent, string remarks) = GetEquivalentandRemarks(FinalAverage);
 				txtFinalAve.Text = FinalAverage.ToString("F2") + " / " + equivalent.ToString("F2");
+			}
+		}
+
+		public void loadrecords()
+		{
+			try
+			{
+				con.Open();
+				string sql = "SELECT s.studNum, s.surname, .s.firstname, s.year, s.program, s.subject, g.saved, g.uploaded, g.remarks FROM tblstudents s INNER JOIN tblgrades g ON s.studNum = g.studNum";
+				MySqlDataAdapter da = new MySqlDataAdapter(sql, con);
+				DataTable dt = new DataTable();
+
+				da.Fill(dt);
+				dgvStudents.DataSource = dt;
+			}
+
+			catch (Exception e)
+			{
+				MessageBox.Show(e.Message);
+
+			}
+			finally
+			{
+				con.Close();
 			}
 		}
 
