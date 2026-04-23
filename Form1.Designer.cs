@@ -71,6 +71,8 @@
 			this.txtMA = new System.Windows.Forms.TextBox();
 			this.txtMCP = new System.Windows.Forms.TextBox();
 			this.finalGradingTab = new System.Windows.Forms.TabPage();
+			this.txtFinalGrade = new System.Windows.Forms.TextBox();
+			this.txtFQ1 = new System.Windows.Forms.TextBox();
 			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
 			this.txtFLabGrade = new System.Windows.Forms.TextBox();
 			this.label16 = new System.Windows.Forms.Label();
@@ -110,8 +112,6 @@
 			this.btnUpload = new System.Windows.Forms.Button();
 			this.txtFinalAve = new System.Windows.Forms.TextBox();
 			this.txtSA = new System.Windows.Forms.TextBox();
-			this.txtFQ1 = new System.Windows.Forms.TextBox();
-			this.txtFinalGrade = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
 			this.MidtermTab.SuspendLayout();
 			this.midtermGradingTab.SuspendLayout();
@@ -132,7 +132,7 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(543, 18);
+			this.label1.Location = new System.Drawing.Point(626, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(285, 25);
 			this.label1.TabIndex = 1;
@@ -162,7 +162,7 @@
 			// 
 			this.cboYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cboYear.FormattingEnabled = true;
-			this.cboYear.Location = new System.Drawing.Point(427, 65);
+			this.cboYear.Location = new System.Drawing.Point(452, 62);
 			this.cboYear.Name = "cboYear";
 			this.cboYear.Size = new System.Drawing.Size(158, 28);
 			this.cboYear.TabIndex = 4;
@@ -171,7 +171,7 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(603, 75);
+			this.label4.Location = new System.Drawing.Point(644, 72);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(78, 20);
 			this.label4.TabIndex = 7;
@@ -181,7 +181,7 @@
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(331, 124);
+			this.label5.Location = new System.Drawing.Point(344, 121);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(89, 20);
 			this.label5.TabIndex = 8;
@@ -191,7 +191,7 @@
 			// 
 			this.label6.AutoSize = true;
 			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(331, 75);
+			this.label6.Location = new System.Drawing.Point(344, 72);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(93, 20);
 			this.label6.TabIndex = 9;
@@ -201,7 +201,7 @@
 			// 
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.Location = new System.Drawing.Point(603, 121);
+			this.label7.Location = new System.Drawing.Point(644, 118);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(70, 20);
 			this.label7.TabIndex = 10;
@@ -210,7 +210,7 @@
 			// txtFirstname
 			// 
 			this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFirstname.Location = new System.Drawing.Point(427, 113);
+			this.txtFirstname.Location = new System.Drawing.Point(452, 113);
 			this.txtFirstname.Name = "txtFirstname";
 			this.txtFirstname.Size = new System.Drawing.Size(158, 28);
 			this.txtFirstname.TabIndex = 12;
@@ -219,7 +219,7 @@
 			// 
 			this.cboProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cboProgram.FormattingEnabled = true;
-			this.cboProgram.Location = new System.Drawing.Point(687, 65);
+			this.cboProgram.Location = new System.Drawing.Point(728, 62);
 			this.cboProgram.Name = "cboProgram";
 			this.cboProgram.Size = new System.Drawing.Size(158, 28);
 			this.cboProgram.TabIndex = 13;
@@ -285,6 +285,7 @@
 			// 
 			// txtMidtermGrade
 			// 
+			this.txtMidtermGrade.Enabled = false;
 			this.txtMidtermGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMidtermGrade.Location = new System.Drawing.Point(217, 381);
 			this.txtMidtermGrade.Name = "txtMidtermGrade";
@@ -325,6 +326,7 @@
 			this.txtMQ3Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMQ3Ave.Location = new System.Drawing.Point(454, 217);
 			this.txtMQ3Ave.Name = "txtMQ3Ave";
+			this.txtMQ3Ave.ReadOnly = true;
 			this.txtMQ3Ave.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ3Ave.TabIndex = 64;
 			// 
@@ -333,6 +335,7 @@
 			this.txtMQ4Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMQ4Ave.Location = new System.Drawing.Point(454, 253);
 			this.txtMQ4Ave.Name = "txtMQ4Ave";
+			this.txtMQ4Ave.ReadOnly = true;
 			this.txtMQ4Ave.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ4Ave.TabIndex = 63;
 			// 
@@ -341,6 +344,7 @@
 			this.txtMEAve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMEAve.Location = new System.Drawing.Point(454, 290);
 			this.txtMEAve.Name = "txtMEAve";
+			this.txtMEAve.ReadOnly = true;
 			this.txtMEAve.Size = new System.Drawing.Size(146, 28);
 			this.txtMEAve.TabIndex = 62;
 			// 
@@ -349,6 +353,7 @@
 			this.txtMQ2Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMQ2Ave.Location = new System.Drawing.Point(454, 177);
 			this.txtMQ2Ave.Name = "txtMQ2Ave";
+			this.txtMQ2Ave.ReadOnly = true;
 			this.txtMQ2Ave.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ2Ave.TabIndex = 61;
 			// 
@@ -384,6 +389,7 @@
 			this.txtMQ1Ave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtMQ1Ave.Location = new System.Drawing.Point(454, 143);
 			this.txtMQ1Ave.Name = "txtMQ1Ave";
+			this.txtMQ1Ave.ReadOnly = true;
 			this.txtMQ1Ave.Size = new System.Drawing.Size(146, 28);
 			this.txtMQ1Ave.TabIndex = 57;
 			// 
@@ -632,6 +638,23 @@
 			this.finalGradingTab.Text = "FINAL GRADING";
 			this.finalGradingTab.UseVisualStyleBackColor = true;
 			this.finalGradingTab.Click += new System.EventHandler(this.finalGradingTab_Click);
+			// 
+			// txtFinalGrade
+			// 
+			this.txtFinalGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFinalGrade.Location = new System.Drawing.Point(230, 380);
+			this.txtFinalGrade.Name = "txtFinalGrade";
+			this.txtFinalGrade.Size = new System.Drawing.Size(356, 28);
+			this.txtFinalGrade.TabIndex = 72;
+			// 
+			// txtFQ1
+			// 
+			this.txtFQ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtFQ1.Location = new System.Drawing.Point(289, 140);
+			this.txtFQ1.Name = "txtFQ1";
+			this.txtFQ1.Size = new System.Drawing.Size(146, 28);
+			this.txtFQ1.TabIndex = 71;
+			this.txtFQ1.TextChanged += new System.EventHandler(this.txtFQ1_TextChanged);
 			// 
 			// linkLabel2
 			// 
@@ -939,7 +962,7 @@
 			// txtSubject
 			// 
 			this.txtSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSubject.Location = new System.Drawing.Point(687, 113);
+			this.txtSubject.Location = new System.Drawing.Point(728, 110);
 			this.txtSubject.Name = "txtSubject";
 			this.txtSubject.Size = new System.Drawing.Size(158, 28);
 			this.txtSubject.TabIndex = 15;
@@ -947,7 +970,7 @@
 			// txtSurname
 			// 
 			this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSurname.Location = new System.Drawing.Point(158, 113);
+			this.txtSurname.Location = new System.Drawing.Point(167, 116);
 			this.txtSurname.Name = "txtSurname";
 			this.txtSurname.Size = new System.Drawing.Size(158, 28);
 			this.txtSurname.TabIndex = 18;
@@ -955,7 +978,7 @@
 			// txtSN
 			// 
 			this.txtSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSN.Location = new System.Drawing.Point(158, 67);
+			this.txtSN.Location = new System.Drawing.Point(167, 70);
 			this.txtSN.Name = "txtSN";
 			this.txtSN.Size = new System.Drawing.Size(158, 28);
 			this.txtSN.TabIndex = 19;
@@ -1036,6 +1059,7 @@
 			// 
 			// txtFinalAve
 			// 
+			this.txtFinalAve.Enabled = false;
 			this.txtFinalAve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtFinalAve.Location = new System.Drawing.Point(1130, 655);
 			this.txtFinalAve.Name = "txtFinalAve";
@@ -1052,23 +1076,6 @@
 			this.txtSA.TabIndex = 52;
 			this.txtSA.Text = "encode here";
 			this.txtSA.Enter += new System.EventHandler(this.txtSA_Enter);
-			// 
-			// txtFQ1
-			// 
-			this.txtFQ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFQ1.Location = new System.Drawing.Point(289, 140);
-			this.txtFQ1.Name = "txtFQ1";
-			this.txtFQ1.Size = new System.Drawing.Size(146, 28);
-			this.txtFQ1.TabIndex = 71;
-			this.txtFQ1.TextChanged += new System.EventHandler(this.txtFQ1_TextChanged);
-			// 
-			// txtFinalGrade
-			// 
-			this.txtFinalGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFinalGrade.Location = new System.Drawing.Point(230, 380);
-			this.txtFinalGrade.Name = "txtFinalGrade";
-			this.txtFinalGrade.Size = new System.Drawing.Size(356, 28);
-			this.txtFinalGrade.TabIndex = 72;
 			// 
 			// Form1
 			// 
